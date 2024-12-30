@@ -13,10 +13,7 @@ Escolher a versão baseado no release + tag desejado do repositório
 <br>
 
 Em máquina sem o GIT instalado (Útil para a máquina do cliente), informar o link completo para a build do arquivo **.whl**
-- **pip install https://github.com/DCLICK-RPA/dclick-rpa-python-bot-lib/releases/download/v1.4.0/bot-1.4.0-py3-none-any.whl**
-
-Em máquina com o GIT instalado (Útil para o desenvolvedor informar apenas o número da tag desejada)
-- **pip install git+https://github.com/DCLICK-RPA/dclick-rpa-python-bot-lib@v1.4.0**
+- **pip install https://github.com/DCLICK-RPA/dclick-rpa-python-bot-lib/releases/download/v2.4/bot-2.4-py3-none-any.whl**
 
 <br>
 
