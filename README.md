@@ -7,7 +7,7 @@ Pacote com funcionalidades gerais para criação de Bots
 
 ## Sobre a instalação
 Escolher a versão baseado no release + tag desejado do repositório
-> Exemplo que será utilizado a seguir: **v1.4.0**  
+> Exemplo que será utilizado a seguir: **v2.4**  
 > Releases: https://github.com/DCLICK-RPA/dclick-rpa-python-bot-lib/releases
 
 <br>
