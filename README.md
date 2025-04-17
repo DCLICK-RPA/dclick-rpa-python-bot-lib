@@ -109,7 +109,7 @@ Pacote agregador para diferentes tipos de formatos de dados
 ```python
 # Classe para validação e leitura de objetos JSON
 Json[T] (item: T)
-Json (json: str) -> tuple[Json, str | None]
+Json.parse (json: str) -> tuple[Json, str | None]
 
 # Classe de manipulação do XML
 ElementoXML.parse(xml: str | Caminho) -> ElementoXML
