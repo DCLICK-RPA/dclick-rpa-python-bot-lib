@@ -2,16 +2,6 @@ import bot
 from typing import Literal
 
 """
-Formato YAML
-"""
-# Transforma o `item` em uma string YAML
-bot.formatos.yaml_stringify(item=...)
-# Realizar o parse de uma string YAML para o objeto do Python apropriado
-bot.formatos.yaml_parse(string="")
-
-
-
-"""
 Unmarshaller
 Parser de um `dict` para uma classe informada
 """
@@ -114,3 +104,21 @@ raiz.to_dict()      # Versão `dict` do elemento
 ElementoXML.registrar_prefixo("ns", "url")  # Registrar um namespace para utilizar na procura com o xpath
 raiz.procurar(xpath="", namespaces={})      # Procurar elementos que resultem no xpath informado
 raiz.encontrar(xpath="", namespaces={})     # Encontrar elemento que resulte no xpath informado ou None caso não seja encontrado
+
+
+
+"""
+TOML
+Classe para leitura, acesso e validação de tipo do formato `TOML`
+- O formato toml aceita os tipos: `str, int, float, bool, dict[str, ...], list[...]`
+- `chave` aceita chaves aninhadas. Exemplo `tool."setup tools"`
+"""
+toml = bot.formatos.Toml("arquivo.toml")
+chave = 'tool."setuptools"'
+# Checar existência
+chave in toml
+toml.existe(chave)
+# Obter valor sem validação
+toml[chave]
+# Obter valor com validação
+toml.obter(chave, dict[str, str])
