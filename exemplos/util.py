@@ -22,6 +22,6 @@ Decoradores de funções
 """
 @bot.util.decoradores.timeout(segundos=30)                              # Executar a função por `segundos` até retornar ou `TimeoutError` caso ultrapasse o tempo
 @bot.util.decoradores.retry(Exception, tentativas=5, segundos=0)        # Realizar `tentativas` de se chamar uma função após algum dos `erro` e aguardar `segundos` até tentar novamente
-@bot.util.decoradores.adicionar_prefixo_erro("Erro ao realizar XPTO")   # Adicionar um prefixo no erro caso a função resulte em exceção
+@bot.util.decoradores.prefixar_erro("Erro ao realizar XPTO")            # Adicionar um prefixo no erro caso a função resulte em exceção
 @bot.util.decoradores.tempo_execucao                                    # Loggar o tempo de execução da função
 @bot.util.decoradores.perfil_execucao                                   # Loggar o perfil de execução da função (DEV - Checar tempo de execução)
