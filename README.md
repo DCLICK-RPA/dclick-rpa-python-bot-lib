@@ -253,6 +253,11 @@ scroll_vertical (
 ) -> Mouse:
 ```
 
+Possível de ser executado como módulo para fazer 
+um loop de `print()` com a posição e cor da posição atual do mouse
+- python -m `bot.mouse`
+- uv run -m `bot.mouse`
+
 ### `navegador`
 Pacote para navegadores Web.  
 Navegadores são abertos em sua inicialização e fechados quando a sua referencia sair do escopo ou caso seja feito `del navegador`
