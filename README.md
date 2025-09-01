@@ -22,6 +22,7 @@ Utilizar o caminho para o arquivo **whl** baixado `bot @ file://.../bot-4.0-py3-
 - Alteração geral no `estruturas.Resultado` e `formatos.Json`
 - Adicionado `sistema.criar_mutex()`
 - Renomeado `util.cronometro()` para `util.Cronometro()`
+- Incluído execução do `bot.mouse` como módulo `-m`
 
 </details>
 <details>
