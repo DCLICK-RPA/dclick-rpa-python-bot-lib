@@ -161,7 +161,7 @@ ElementoXML(
 # Classe para validação e parse de um `dict` para uma classe customizada
 Unmarshaller[T] (cls: type[T])
     # Realizar o parse do `item` conforme a classe informada
-    .parse(item: dict[str, Any]) -> tuple[T, str | None]
+    .parse(item: dict[str, Any]) -> T
 ```
 
 ### `ftp`
