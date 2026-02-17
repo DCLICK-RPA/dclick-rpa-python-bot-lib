@@ -12,10 +12,6 @@
 /dist
 **.egg-info
 
-# uv
-uv.lock
-.python-version
-
 # venv
 *venv
 
