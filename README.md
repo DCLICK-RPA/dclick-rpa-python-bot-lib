@@ -17,7 +17,8 @@ Utilizar o caminho para o arquivo **whl** baixado `bot @ file://.../bot-5.1-py3-
 <details>
 <summary>v5.1</summary>
 
-- Adicionado construtores do `Navegador`
+- Removido `undetected-chromedriver`
+- Adicionado construtores do `Navegador` e suporte ao `with`
 - Alterado implementações `Edge` `Chrome`
 - Alterado forma de se obter `linhas_afetadas` para o `ResultadoSQL`
 
@@ -404,13 +405,15 @@ Pacote para Navegadore Web utilizando o `selenium` como abstração.
 
 ```python
 # Navegador Edge
+with Edge(...) as navegador: ...
 Edge(
     timeout = 30.0,
     download: str | Caminho = "./downloads",
     options_callback: Callable[[EdgeOptions], None] | None = None
 )
 
-# Navegador Chrome com `undetected_chromedriver` para evitar detecção
+# Navegador Chrome
+with Chrome(...) as navegador: ...
 Chrome(
     timeout = 30.0,
     download: str | Caminho = "./downloads",
