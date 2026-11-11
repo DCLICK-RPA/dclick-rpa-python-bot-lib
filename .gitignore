@@ -2,8 +2,8 @@
 **/__pycache__
 
 # log / configfile / sqlite
-**.log
-/**logs
+/logs*
+log.jsonl
 **.ini
 **.sqlite
 
@@ -15,5 +15,5 @@
 # venv
 *venv
 
-# teste
-teste.py
+# dev
+dev.py
